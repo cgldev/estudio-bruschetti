@@ -6,12 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Conozca nuestros servicio de liquidación de impuestos, sueldos, constitución de sociedades y preparación de estados contables en Mar del Plata."
+      content="Liquidación de impuestos y sueldos, auditoría, outsourcing contable y asesoramiento societario en Mar del Plata. Consultá nuestros servicios."
+    />
+    <link
+      rel="canonical"
+      href="https://estudiocontablebruschetti.com.ar/servicios.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:site_name" content="Estudio Contable Bruschetti" />
+    <meta
+      property="og:title"
+      content="Servicios contables en Mar del Plata | Estudio Bruschetti"
     />
     <meta
-      name="keywords"
-      content="estudio, contable, impositivo, laboral, bruschetti, mar del plata, liquidacion, impuestos, sueldos, sociedades"
+      property="og:description"
+      content="Liquidación de impuestos y sueldos, auditoría, outsourcing contable y asesoramiento societario en Mar del Plata. Consultá nuestros servicios."
     />
+    <meta
+      property="og:url"
+      content="https://estudiocontablebruschetti.com.ar/servicios.html"
+    />
+    <meta
+      property="og:image"
+      content="https://estudiocontablebruschetti.com.ar/imgs/estudio-contable-bruschetti-banner.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Estudio Contable Bruschetti en Mar del Plata"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
     <link
       rel="shortcut icon"
       href="imgs/estudio-contable-bruschetti-icono.png"
@@ -19,7 +43,7 @@
     />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/bootstrap-icons.css" />
-    <title>Estudio Contable Impositivo Laboral | Servicios</title>
+    <title>Servicios contables en Mar del Plata | Estudio Bruschetti</title>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -37,7 +61,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark site-navbar fixed-top">
         <div class="container">
           <a class="navbar-brand" href="/"
             ><img
@@ -50,9 +74,9 @@
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#estudio-contable"
-            aria-controls="navbarSupportedContent"
+            aria-controls="estudio-contable"
             aria-expanded="false"
-            aria-label="Estudio Contable navegación"
+            aria-label="Abrir o cerrar menú de navegación"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -67,7 +91,12 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="servicios.html">Servicios</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="servicios.html"
+                  >Servicios</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="preguntas-frecuentes.html"
@@ -78,7 +107,9 @@
                 <a class="nav-link" href="links-utiles.html">Links útiles</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Contacto</a>
+                <a class="nav-link contact-link" href="contacto.html"
+                  >Contacto</a
+                >
               </li>
             </ul>
           </div>
@@ -86,212 +117,321 @@
       </nav>
     </header>
     <main>
-      <div class="container">
-        <div class="text-center my-5">
-          <h1>Estudio Contable Laboral Impositivo | Servicios</h1>
-          <hr />
+      <div class="services-page">
+        <div class="container">
+          <header class="services-heading text-center">
+            <p class="services-heading__eyebrow">Cómo podemos ayudarte</p>
+            <h1>Servicios para acompañar tu actividad</h1>
+            <p>
+              Asesoramiento profesional y soluciones prácticas para gestionar
+              tu negocio con tranquilidad.
+            </p>
+          </header>
+          <nav class="services-nav" aria-label="Áreas de servicio">
+            <a href="#impuestos"><i class="bi bi-calculator"></i> Impuestos</a>
+            <a href="#auditoria"><i class="bi bi-clipboard2-check"></i> Auditoría</a>
+            <a href="#outsourcing"><i class="bi bi-briefcase"></i> Outsourcing</a>
+            <a href="#sueldos"><i class="bi bi-people"></i> Sueldos</a>
+            <a href="#legales"><i class="bi bi-building"></i> Legales</a>
+          </nav>
+          <div class="services-list">
+            <section class="service-detail" id="impuestos">
+              <div class="service-detail__icon" aria-hidden="true">
+                <i class="bi bi-calculator"></i>
+              </div>
+              <div class="service-detail__content">
+                <h2>Impuestos</h2>
+                <p class="service-detail__lead">
+                  Asesoramiento, planificación y gestión fiscal, con atención a
+                  las necesidades específicas y al modelo de negocio de cada
+                  cliente.
+                </p>
+                <details class="service-includes">
+                  <summary>Ver el alcance y las tareas incluidas</summary>
+                  <p>
+                    Nos comprometemos a brindarte un servicio de asesoramiento,
+                    planificación y gestión fiscal de alta calidad y excelencia.
+                  </p>
+                  <p>
+                    Se busca dar un tratamiento diferencial a cada cliente,
+                    atento a sus necesidades específicas y a la aplicación de
+                    procedimientos y metodologías con las mejores prácticas
+                    impositivas de cada sector.
+                  </p>
+                  <ul>
+                    <li>
+                      Auditorías impositivas, con el objeto de encontrar un
+                      aprovechamiento efectivo de las economías de opción
+                      tributarias en el marco de la actividad y modelo de
+                      negocio del cliente.
+                    </li>
+                    <li>
+                      Asesoramiento sobre tributos nacionales, provinciales y
+                      municipales.
+                    </li>
+                    <li>
+                      Confección y/o revisión de declaraciones juradas de
+                      impuestos nacionales y provinciales.
+                    </li>
+                    <li>Actualización sobre las novedades en materia tributaria.</li>
+                  </ul>
+                </details>
+              </div>
+            </section>
+            <section class="service-detail" id="auditoria">
+              <div class="service-detail__icon" aria-hidden="true">
+                <i class="bi bi-clipboard2-check"></i>
+              </div>
+              <div class="service-detail__content">
+                <h2>Auditoría</h2>
+                <p class="service-detail__lead">
+                  Información actualizada y confiable para tomar decisiones,
+                  identificar riesgos y gestionar los recursos de tu negocio,
+                  con comunicación directa y confidencialidad.
+                </p>
+                <details class="service-includes">
+                  <summary>Ver el alcance y las tareas incluidas</summary>
+                  <p>
+                    Vas a tener información actualizada y confiable para tomar
+                    las mejores decisiones para tu negocio. Trabajaremos en
+                    forma conjunta, con comunicación directa y fluida, y
+                    cumpliendo estrictos protocolos de confidencialidad.
+                  </p>
+                  <p>
+                    Esta área está diseñada para ayudarte en la generación de
+                    valor, identificando riesgos y gestionando su abordaje de
+                    forma eficiente, y colaborar con el desafío que implica la
+                    administración de recursos e información.
+                  </p>
+                  <ul>
+                    <li>
+                      Auditorías de estados contables preparados bajo normas
+                      contables profesionales argentinas para fines locales.
+                    </li>
+                    <li>Auditorías para fines específicos.</li>
+                    <li>Certificaciones contables.</li>
+                    <li>Consultoría contable.</li>
+                  </ul>
+                </details>
+              </div>
+            </section>
+            <section class="service-detail" id="outsourcing">
+              <div class="service-detail__icon" aria-hidden="true">
+                <i class="bi bi-briefcase"></i>
+              </div>
+              <div class="service-detail__content">
+                <h2>Outsourcing contable y administrativo</h2>
+                <p class="service-detail__lead">
+                  Una administración profesional y ordenada para acompañar el
+                  crecimiento de tu negocio, con procesos de calidad y un costo
+                  más accesible que un área administrativa propia.
+                </p>
+                <details class="service-includes">
+                  <summary>Ver el alcance y las tareas incluidas</summary>
+                  <p>
+                    Queremos acompañarte en tu crecimiento y sabemos que para
+                    lograrlo podemos ayudarte con la administración de tu
+                    negocio para que alcances tu máximo potencial.
+                  </p>
+                  <p>
+                    Proporcionamos un servicio de contabilidad con procesos
+                    administrativos estandarizados de alta calidad. Una
+                    administración ordenada facilita el crecimiento de
+                    cualquier negocio, pero muchas veces tener un área dedicada
+                    a estas actividades dentro de una empresa es muy costoso.
+                    Por este motivo buscamos el equilibrio entre ambos para
+                    lograr una administración profesionalizada y precisa que
+                    permita mejorar el rendimiento económico a un costo más
+                    accesible que tener tu propia área administrativa.
+                  </p>
+                  <ul>
+                    <li>Asesoramiento contable integral.</li>
+                    <li>Registro de compras y ventas.</li>
+                    <li>
+                      Conciliación de cuentas (bancos, clientes y proveedores).
+                    </li>
+                    <li>Emisión de facturas mensuales.</li>
+                  </ul>
+                </details>
+              </div>
+            </section>
+            <section class="service-detail" id="sueldos">
+              <div class="service-detail__icon" aria-hidden="true">
+                <i class="bi bi-people"></i>
+              </div>
+              <div class="service-detail__content">
+                <h2>Sueldos</h2>
+                <p class="service-detail__lead">
+                  Liquidación integral de haberes para organizar el cumplimiento
+                  de las obligaciones laborales, sindicales y de cargas sociales.
+                </p>
+                <details class="service-includes">
+                  <summary>Ver el alcance y las tareas incluidas</summary>
+                  <p>
+                    Queremos brindarte un servicio integral de liquidación de
+                    haberes para garantizarte el cumplimiento de las
+                    obligaciones relacionadas con tu nómina.
+                  </p>
+                  <p>
+                    Los beneficios de contar con nuestro servicio se ven
+                    reflejados en el cumplimiento y en la organización de las
+                    obligaciones de liquidación, así como también en la
+                    actualización constante en materia de sueldos, el
+                    cumplimiento de las obligaciones sindicales y la liquidación
+                    de las cargas sociales.
+                  </p>
+                  <ul>
+                    <li>
+                      Liquidación de haberes mensuales, finales, anticipos,
+                      vacaciones, aguinaldo y liquidaciones extraordinarias.
+                    </li>
+                    <li>
+                      Liquidación del Impuesto a las Ganancias del personal en
+                      relación de dependencia. Emisión de recibos de haberes.
+                    </li>
+                    <li>Altas y bajas de Empleados.</li>
+                    <li>
+                      Preparación y presentación de cargas sociales y
+                      declaración de conceptos no remunerativos.
+                    </li>
+                    <li>Armado de boletas sindicales.</li>
+                    <li>
+                      Armado de planes de facilidades de pago AFIP para
+                      contribuciones y aportes de la Seguridad Social.
+                    </li>
+                  </ul>
+                </details>
+              </div>
+            </section>
+            <section class="service-detail" id="legales">
+              <div class="service-detail__icon" aria-hidden="true">
+                <i class="bi bi-building"></i>
+              </div>
+              <div class="service-detail__content">
+                <h2>Legales y sociedades</h2>
+                <p class="service-detail__lead">
+                  Asesoramiento para abordar las necesidades legales del día a
+                  día comercial y mantener las sociedades al día.
+                </p>
+                <details class="service-includes">
+                  <summary>Ver el alcance y las tareas incluidas</summary>
+                  <p>
+                    Queremos ayudarte con las complejidades que puedan surgir en
+                    el día a día de tus actividades comerciales, aportando
+                    sustento legal y responsable para que puedas tomar siempre
+                    la mejor decisión y actuar de acuerdo con lo previsto en la
+                    ley.
+                  </p>
+                  <p>
+                    Esto permitirá llevar sociedades comerciales al día y
+                    actuar en forma coordinada para garantizar todos los
+                    aspectos legales de tu empresa.
+                  </p>
+                  <ul>
+                    <li>
+                      Asesoramiento general, análisis e informes legales sobre
+                      asuntos comerciales relativos a distintas industrias.
+                    </li>
+                    <li>
+                      Constitución y mantenimiento legal de sociedades
+                      comerciales, y planificación de esquemas societarios.
+                    </li>
+                    <li>
+                      Redacción y asesoramiento legal en la celebración o
+                      modificación de contratos comerciales.
+                    </li>
+                    <li>
+                      Asesoramiento en la contestación de requerimientos,
+                      pre-vistas y vistas, trazando estrategias procesales desde
+                      el inicio de la inspección.
+                    </li>
+                    <li>Asistencia durante el proceso determinativo.</li>
+                    <li>
+                      Confección de descargos y recursos en sede administrativa
+                      (nacional, provincial y municipal) y de demandas y
+                      recursos en sede judicial.
+                    </li>
+                    <li>Patrocinio letrado en cuestiones tributarias.</li>
+                    <li>
+                      Asesoramiento ante terminaciones laborales voluntarias,
+                      con y sin causa.
+                    </li>
+                  </ul>
+                </details>
+              </div>
+            </section>
+          </div>
         </div>
-        <h2>Impuestos</h2>
-        <p class="lead">
-          Nos comprometemos a brindarte un servicio de asesoramiento,
-          planificación y gestión fiscal de alta calidad y excelencia.
-        </p>
-        <p class="lead">
-          Se busca un dar un tratamiento diferencial a cada cliente, atento a
-          sus necesidades específicas, así como por la aplicación de
-          procedimientos y metodologías, aportando las mejores prácticas
-          impositivas de cada sector.
-        </p>
-        <h4><u>Herramientas:</u></h4>
-        <ul>
-          <li>
-            Auditorías impositivas, con el objeto de encontrar un
-            aprovechamiento efectivo de las economías de opción tributarias en
-            el marco de la actividad y modelo de negocio del cliente.
-          </li>
-          <li>
-            Asesoramiento sobre tributos nacionales, provinciales y municipales.
-          </li>
-          <li>
-            Confección y/o revisión de declaraciones juradas de impuestos
-            nacionales y provinciales.
-          </li>
-          <li>Actualización sobre las novedades en materia tributaria.</li>
-        </ul>
-        <h2>Auditoría</h2>
-        <p class="lead">
-          Vas a tener información actualizada y confiable para tomar las mejores
-          decisiones para tu negocio, trabajaremos en forma conjunta,
-          manteniendo una comunicación directa y fluida, y cumpliendo por
-          nuestra parte con estrictos protocolos de confidencialidad.
-        </p>
-        <p class="lead">
-          Esta área está diseñada con el objetivo de ayudarte en la generación
-          de valor, identificando riesgos y gestionando su abordaje de forma
-          eficiente, de modo de colaborar con el desafío que implica la
-          administración de recursos e información.
-        </p>
-        <h4><u>Herramientas:</u></h4>
-        <ul>
-          <li>
-            Auditorías de estados contables preparados bajo normas contables
-            profesionales argentinas para fines locales.
-          </li>
-          <li>Auditorías para fines específicos.</li>
-          <li>Certificaciones contables.</li>
-          <li>Consultoría contable.</li>
-        </ul>
-        <h2>Outsourcing</h2>
-        <p class="lead">
-          Queremos acompañarte en tu crecimiento y sabemos que para lograrlo
-          podemos ayudarte con la administración de tu negocio para que puedas
-          alcanzar tu máximo potencial.
-        </p>
-        <p class="lead">
-          Proporcionamos un servicio de contabilidad con procesos
-          administrativos estandarizados de alta calidad. Consideramos que tener
-          una administración ordenada facilita el crecimiento de cualquier
-          negocio, pero muchas veces tener un área dedicada a estas actividades
-          dentro de una empresa es muy costoso, por este motivo buscamos el
-          equilibrio entre ambos para lograr tener una administración
-          profesionalizada y precisa que permita mejorar el rendimiento
-          económico a un costo más accesible que tener tu propia área
-          administrativa.
-        </p>
-        <h4><u>Herramientas:</u></h4>
-        <ul>
-          <li>Asesoramiento contable integral.</li>
-          <li>Registro de compras y ventas.</li>
-          <li>Conciliación de cuentas (bancos, clientes y proveedores).</li>
-          <li>Emisión de facturas mensuales.</li>
-        </ul>
-        <h2>Sueldos</h2>
-        <p class="lead">
-          Queremos brindarte un servicio integral de liquidación de haberes para
-          garantizarte el cumplimiento de las obligaciones relacionadas con tu
-          nómina.
-        </p>
-        <p class="lead">
-          Los beneficios de contar con nuestro servicio se ven reflejados en el
-          cumplimiento y en la organización de las obligaciones de liquidación,
-          así como también en la actualización constante en materia de sueldos,
-          dando cumplimiento a las obligaciones sindicales, así como también con
-          la liquidación de las Cargas Sociales.
-        </p>
-        <h4><u>Herramientas:</u></h4>
-        <ul>
-          <li>
-            Liquidación de haberes (liquidaciones mensuales, finales, anticipos,
-            vacaciones, aguinaldo y extraordinarias, entre otras).
-          </li>
-          <li>
-            Liquidación del Impuesto a las Ganancias del personal en relación de
-            dependencia. Emisión de recibos de haberes
-          </li>
-          <li>Altas y bajas de Empleados</li>
-          <li>
-            Preparación y presentación de cargas sociales y declaración de
-            conceptos no remunerativos.
-          </li>
-          <li>Armado de boletas sindicales.</li>
-          <li>
-            Armado de planes de facilidades de pago AFIP para contribuciones y
-            aportes de la Seguridad Social.
-          </li>
-        </ul>
-        <h2>Legales</h2>
-        <p class="lead">
-          Queremos ayudarte en las complejidades que puedan surgir en el día a
-          día de tus actividades comerciales, aportando sustento legal y
-          responsable para que puedas tomas siempre la mejor decisión y actuar
-          de acuerdo a lo previsto en la ley.
-        </p>
-        <p class="lead">
-          Esto permitirá llevar sociedades comerciales al día y actuar en forma
-          coordinada para garantizar todos los aspectos legales de su empresa.
-        </p>
-        <h4><u>Herramientas:</u></h4>
-        <ul>
-          <li>
-            Asesoramiento general, que incluye análisis e informes legales sobre
-            asuntos comerciales relativos a distintas industrias.
-          </li>
-          <li>
-            Constitución y mantenimiento legal de sociedades comerciales, así
-            como la planificación de esquemas societarios eficientes.
-          </li>
-          <li>
-            Redacción y asesoramiento legal en la celebración o modificación de
-            todo tipo de contratos comerciales.
-          </li>
-          <li>
-            Asesoramiento en la contestación de requerimientos, pre-vistas y
-            vistas, trazando estrategias procesales desde el inicio de la
-            inspección.
-          </li>
-          <li>Asistencia durante el proceso determinativo.</li>
-          <li>
-            Confección de descargos y recursos en sede administrativa (nacional,
-            provincial y municipal) y de demandas y recursos en sede judicial.
-          </li>
-          <li>Patrocinio letrado en cuestiones tributarias.</li>
-          <li>
-            Asesoramiento ante terminaciones laborales voluntarias, con y sin
-            causa.
-          </li>
-        </ul>
       </div>
     </main>
     <!-- Seccion boton contacto -->
-    <section class="bg-primary text-light p-5 my-5">
+    <section class="services-contact-cta">
       <div class="container">
-        <div class="d-md-flex justify-content-between align-items-center">
-          <h3 class="mb-3 mb-md-0 display-4">¿Dudas o Consultas?</h3>
-
-          <a href="contacto.html" class="btn btn-dark btn-lg" type="button"
-            >Contáctenos</a
-          >
+        <div>
+          <h2>¿No sabés qué servicio necesitás?</h2>
+          <p>Contanos sobre tu actividad y te orientamos.</p>
         </div>
+        <a href="contacto.html" class="btn">Consultar por un servicio</a>
       </div>
     </section>
-    <footer
-      class="d-flex justify-content-between p-5 text-start flex-wrap bg-dark text-white"
-    >
-      <ul class="nav flex-column">
-        <li class="fw-bold nav-item">
-          Estudio Contable Impositivo Laboral Bruschetti
-        </li>
-        <li class="nav-item">Leandro Mariano Bruschetti</li>
-        <li class="nav-item">CUIT 20-27741801-1</li>
-        <li class="nav-item">CONTADOR PUBLICO Tº162 Fº132</li>
-        <li class="nav-item">LICENCIADO EN ADMINISTRACION Tº9 Fº124</li>
-        <li class="nav-item">LEGAJO 42142/1 C.P.C.E.P.B.A.</li>
-      </ul>
-      <ul class="nav flex-column">
-        <li class="fw-bold nav-item">Dirrección</li>
-        <li class="nav-item">España 4027 - Mar del Plata</li>
-      </ul>
-      <ul class="nav flex-column">
-        <li class="fw-bold nav-item">Horario</li>
-        <li class="nav-item">8:30hs. a 13:30hs.</li>
-      </ul>
-      <ul class="nav flex-column">
-        <li class="fw-bold nav-item">Contacto</li>
-        <li class="nav-item">
-          <a href="mailto:leandro.bruschetti@gmail.com?Subject=consulta"
-            >leandro.bruschetti@gmail.com</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="tel:+542233524723">tel. fijo: 3524723</a>
-        </li>
-      </ul>
+    <footer class="site-footer text-white">
+      <div class="container">
+        <div class="row g-4 site-footer__main">
+          <section class="col-lg-5" aria-labelledby="footer-study-title">
+            <h2 class="site-footer__title" id="footer-study-title">
+              Estudio Contable Impositivo Laboral Bruschetti
+            </h2>
+            <p class="site-footer__name">Leandro Mariano Bruschetti</p>
+            <ul class="site-footer__credentials list-unstyled">
+              <li>Contador Público · T.º 162 F.º 132</li>
+              <li>Licenciado en Administración · T.º 9 F.º 124</li>
+              <li>Legajo 42142/1 · C.P.C.E.P.B.A.</li>
+              <li>CUIT 20-27741801-1</li>
+            </ul>
+          </section>
+          <nav class="col-12 col-md-6 col-lg-3" aria-label="Navegación del pie de página">
+            <h2 class="site-footer__heading">Explorá el sitio</h2>
+            <ul class="site-footer__links list-unstyled">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="sobre-estudio.html">Sobre el estudio</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+              <li><a href="links-utiles.html">Links útiles</a></li>
+            </ul>
+          </nav>
+          <section class="col-12 col-md-6 col-lg-4" aria-labelledby="footer-contact-title">
+            <h2 class="site-footer__heading" id="footer-contact-title">
+              Contacto
+            </h2>
+            <ul class="site-footer__contact list-unstyled">
+              <li>
+                <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                <span><span class="site-footer__label">Dirección</span>España 4027, Mar del Plata</span>
+              </li>
+              <li>
+                <i class="bi bi-clock" aria-hidden="true"></i>
+                <span><span class="site-footer__label">Horario</span>8:30 a 13:30 h</span>
+              </li>
+              <li>
+                <i class="bi bi-envelope" aria-hidden="true"></i>
+                <a href="mailto:leandro.bruschetti@gmail.com?Subject=consulta">leandro.bruschetti@gmail.com</a>
+              </li>
+              <li>
+                <i class="bi bi-telephone" aria-hidden="true"></i>
+                <a href="tel:+542233524723">Teléfono: 3524723</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="site-footer__bottom">
+          <p>Estudio Contable Bruschetti <span aria-hidden="true">·</span> Mar del Plata</p>
+        </div>
+      </div>
     </footer>
-    <a href="https://wa.link/ryhjqr">
+    <a class="whatsapp-float" href="https://wa.link/ryhjqr" aria-label="Contactar por WhatsApp">
       <img
         src="imgs/whatsapp.svg"
-        alt="Estudio Contable Impositivo Laboral - Whatsapp"
-        style="position: fixed; bottom: 50px; right: 20px"
+        alt=""
     /></a>
 
     <script src="js/bootstrap.js"></script>

@@ -6,12 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Asesórese sobre liquidación de impuestos, sueldos, constitución de sociedades y preparación de estados contables en Mar del Plata."
+      content="Asesoramiento contable, impositivo y laboral en Mar del Plata para personas y empresas. Conocé los servicios del Estudio Bruschetti."
+    />
+    <link
+      rel="canonical"
+      href="https://estudiocontablebruschetti.com.ar/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:site_name" content="Estudio Contable Bruschetti" />
+    <meta
+      property="og:title"
+      content="Estudio Contable en Mar del Plata | Bruschetti"
     />
     <meta
-      name="keywords"
-      content="estudio, contable, impositivo, laboral, bruschetti, mar del plata, liquidacion, impuestos, sueldos, sociedades"
+      property="og:description"
+      content="Asesoramiento contable, impositivo y laboral en Mar del Plata para personas y empresas. Conocé los servicios del Estudio Bruschetti."
     />
+    <meta
+      property="og:url"
+      content="https://estudiocontablebruschetti.com.ar/"
+    />
+    <meta
+      property="og:image"
+      content="https://estudiocontablebruschetti.com.ar/imgs/estudio-contable-bruschetti-banner.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Estudio Contable Bruschetti en Mar del Plata"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
     <link
       rel="shortcut icon"
       href="imgs/estudio-contable-bruschetti-icono.png"
@@ -20,7 +44,30 @@
 
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/bootstrap-icons.css" />
-    <title>Estudio Contable Impositivo Laboral | Mar del Plata</title>
+    <title>Estudio Contable en Mar del Plata | Bruschetti</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Estudio Contable Impositivo Laboral Bruschetti",
+        "url": "https://estudiocontablebruschetti.com.ar/",
+        "image": "https://estudiocontablebruschetti.com.ar/imgs/estudio-contable-bruschetti-banner.jpg",
+        "logo": "https://estudiocontablebruschetti.com.ar/imgs/estudio-contable-bruschetti-logo.png",
+        "telephone": "+542233524723",
+        "email": "leandro.bruschetti@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "España 4027",
+          "addressLocality": "Mar del Plata",
+          "addressRegion": "Buenos Aires",
+          "addressCountry": "AR"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Argentina"
+        }
+      }
+    </script>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -38,7 +85,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark site-navbar fixed-top">
         <div class="container">
           <a class="navbar-brand" href="/"
             ><img
@@ -51,9 +98,9 @@
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#estudio-contable"
-            aria-controls="navbarSupportedContent"
+            aria-controls="estudio-contable"
             aria-expanded="false"
-            aria-label="Estudio Contable navegación"
+            aria-label="Abrir o cerrar menú de navegación"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -81,155 +128,267 @@
                 <a class="nav-link" href="links-utiles.html">Links útiles</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
+                <a class="nav-link contact-link" href="contacto.html"
+                  >Contacto</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <div class="container text-center">
-      <div class="position-relative text-center text-white mb-5">
-        <img
-          src="imgs/estudio-contable-bruschetti-banner.webp"
-          class="w-100"
-          alt="Estudio Contable Banner"
-        />
-        <div
-          class="position-absolute top-50 start-50 translate-middle-x w-100 px-3"
-        >
-          <h1 class="display-4 text-black">
-            <mark>Estudio Contable Impositivo Laboral</mark>
-          </h1>
-        </div>
-      </div>
-      <div class="pt-2 pt-md-5">
-        <h2 class="display-6">Bienvenido al Estudio Contable Bruschetti</h2>
-        <hr />
-        <p class="lead">Conozca Nuestros Servicios</p>
-      </div>
-      <main>
-        <div
-          class="d-flex justify-content-between align-items-center flex-column flex-lg-row my-5"
-        >
-          <div class="card m-2" style="width: 15rem">
-            <img
-              src="imgs/estudio-contable-bruschetti-img1.webp"
-              alt="Estudio Contable Impositivo Laboral Bruschetti"
-              class="card-img-top"
-              height="300"
-              alt="Producto"
-            />
-            <div class="card-body">
-              <p class="card-text fw-bold">
-                Liquidacion de Impuestos nac., prov. y mpal..
+    <main>
+      <section class="home-hero">
+        <div class="row g-0">
+          <div class="col-lg-6">
+            <div class="home-hero__copy">
+              <p class="home-hero__eyebrow">Estudio contable · Mar del Plata</p>
+              <h1>Orden y claridad para las decisiones de tu negocio</h1>
+              <p class="home-hero__description">
+                Asesoramiento contable, impositivo y laboral para acompañarte en
+                cada etapa de tu actividad.
               </p>
-              <a href="servicios.html" class="btn btn-primary text-dark"
-                >Ver Más</a
-              >
+              <div class="home-hero__actions">
+                <a href="contacto.html" class="btn btn-hero-primary"
+                  >Solicitar asesoramiento</a
+                >
+                <a href="servicios.html" class="btn btn-hero-secondary"
+                  >Conocer servicios</a
+                >
+              </div>
+              <div class="home-hero__details">
+                <span
+                  ><i class="bi bi-check-circle"></i> Atención personalizada</span
+                >
+                <span
+                  ><i class="bi bi-geo-alt"></i> Mar del Plata y alrededores</span
+                >
+              </div>
             </div>
           </div>
-          <div class="card m-2" style="width: 15rem">
+          <div class="col-lg-6">
             <img
-              src="imgs/estudio-contable-bruschetti-img2.webp"
-              alt="Estudio Contable Impositivo Laboral Bruschetti"
-              class="card-img-top"
-              height="300"
-              alt="Producto"
+              src="imgs/estudio-contable-bruschetti-banner.webp"
+              class="home-hero__image"
+              alt="Calculadora y documentación para el análisis contable"
             />
-            <div class="card-body">
-              <p class="card-text fw-bold">
-                Liquidación de Sueldos Convenios Varios.
-              </p>
-              <a href="servicios.html" class="btn btn-primary text-dark"
-                >Ver Más</a
-              >
-            </div>
-          </div>
-          <div class="card m-2" style="width: 15rem">
-            <img
-              src="imgs/estudio-contable-bruschetti-img3.webp"
-              alt="Estudio Contable Impositivo Laboral Bruschetti"
-              class="card-img-top"
-              height="300"
-              alt="Producto"
-            />
-            <div class="card-body">
-              <p class="card-text fw-bold">Constitución de Sociedades.</p>
-              <br />
-              <a href="servicios.html" class="btn btn-primary text-dark"
-                >Ver Más</a
-              >
-            </div>
-          </div>
-          <div class="card m-2" style="width: 15rem">
-            <img
-              src="imgs/estudio-contable-bruschetti-img4.webp"
-              alt="Estudio Contable Impositivo Laboral Bruschetti"
-              class="card-img-top"
-              height="300"
-              alt="Producto"
-            />
-            <div class="card-body">
-              <p class="card-text fw-bold">Preparacion de Estados Contables</p>
-              <a href="servicios.html" class="btn btn-primary text-dark"
-                >Ver Más</a
-              >
-            </div>
           </div>
         </div>
-      </main>
-    </div>
+      </section>
+      <section class="container home-services-intro">
+        <div class="text-center pt-2 pt-md-5">
+          <h2 class="display-6">Acompañamiento integral para tu actividad</h2>
+          <p class="lead mb-0">
+            Soluciones contables y de gestión para trabajar con más claridad.
+          </p>
+        </div>
+        <div class="row g-4 my-4 my-lg-5 home-services-grid">
+          <div class="col-12 col-md-6 col-xl-3">
+            <article class="card service-card h-100">
+              <div class="card-body">
+                <div class="service-card__icon" aria-hidden="true">
+                  <i class="bi bi-calculator"></i>
+                </div>
+                <h3 class="service-card__title">Impuestos</h3>
+                <p class="service-card__description">
+                  Asesoramiento y gestión de obligaciones nacionales,
+                  provinciales y municipales.
+                </p>
+                <a href="servicios.html" class="service-card__link"
+                  >Conocer el servicio <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3">
+            <article class="card service-card h-100">
+              <div class="card-body">
+                <div class="service-card__icon" aria-hidden="true">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h3 class="service-card__title">Sueldos</h3>
+                <p class="service-card__description">
+                  Liquidación de haberes y acompañamiento en obligaciones
+                  laborales y cargas sociales.
+                </p>
+                <a href="servicios.html" class="service-card__link"
+                  >Conocer el servicio <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3">
+            <article class="card service-card h-100">
+              <div class="card-body">
+                <div class="service-card__icon" aria-hidden="true">
+                  <i class="bi bi-building"></i>
+                </div>
+                <h3 class="service-card__title">Sociedades</h3>
+                <p class="service-card__description">
+                  Asesoramiento para la constitución y el mantenimiento de
+                  sociedades comerciales.
+                </p>
+                <a href="servicios.html" class="service-card__link"
+                  >Conocer el servicio <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3">
+            <article class="card service-card h-100">
+              <div class="card-body">
+                <div class="service-card__icon" aria-hidden="true">
+                  <i class="bi bi-file-earmark-bar-graph"></i>
+                </div>
+                <h3 class="service-card__title">Estados contables</h3>
+                <p class="service-card__description">
+                  Preparación de estados contables y certificaciones para tu
+                  actividad.
+                </p>
+                <a href="servicios.html" class="service-card__link"
+                  >Conocer el servicio <i class="bi bi-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="home-values" aria-labelledby="home-values-title">
+        <div class="container">
+          <div class="home-values__heading">
+            <p class="home-values__eyebrow">El estudio</p>
+            <h2 id="home-values-title">
+              Una relación de confianza, más allá de los números
+            </h2>
+            <p>
+              Combinamos cercanía y experiencia para acompañar las decisiones de
+              cada cliente.
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-xl-3">
+              <article class="home-value">
+                <span class="home-value__icon" aria-hidden="true"
+                  ><i class="bi bi-person-check"></i
+                ></span>
+                <h3>Atención personalizada</h3>
+                <p>
+                  Un servicio pensado según las necesidades de cada cliente y
+                  la realidad de su actividad.
+                </p>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+              <article class="home-value">
+                <span class="home-value__icon" aria-hidden="true"
+                  ><i class="bi bi-chat-dots"></i
+                ></span>
+                <h3>Comunicación directa</h3>
+                <p>
+                  Cercanía y diálogo para trabajar en conjunto y resolver cada
+                  consulta con claridad.
+                </p>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+              <article class="home-value">
+                <span class="home-value__icon" aria-hidden="true"
+                  ><i class="bi bi-shield-lock"></i
+                ></span>
+                <h3>Confidencialidad</h3>
+                <p>
+                  Cuidamos la información de nuestros clientes con protocolos de
+                  trabajo confidenciales.
+                </p>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3">
+              <article class="home-value">
+                <span class="home-value__icon" aria-hidden="true"
+                  ><i class="bi bi-geo-alt"></i
+                ></span>
+                <h3>Alcance en todo el país</h3>
+                <p>
+                  Desde Mar del Plata, acompañamos a clientes de distintas zonas
+                  mediante tecnología y comunicación.
+                </p>
+              </article>
+            </div>
+          </div>
+          <a href="sobre-estudio.html" class="home-values__link"
+            >Conocé más sobre el estudio <i class="bi bi-arrow-right"></i
+          ></a>
+        </div>
+      </section>
+    </main>
     <!-- Seccion boton contacto -->
-    <section class="bg-primary text-light p-5">
+    <section class="contact-cta-banner">
       <div class="container">
-        <div class="d-md-flex justify-content-between align-items-center">
-          <h3 class="mb-3 mb-md-0 display-4">¿Dudas o Consultas?</h3>
-
-          <a href="contacto.html" class="btn btn-dark btn-lg" type="button"
-            >Contáctenos</a
-          >
+        <div>
+          <h2 class="contact-prompt-title">¿Querés conversar sobre tu actividad?</h2>
+          <p>Estamos para escuchar tu consulta y orientarte.</p>
         </div>
+        <a href="contacto.html" class="btn">Solicitar asesoramiento</a>
       </div>
     </section>
-    <footer
-      class="d-flex justify-content-between mt-5 p-5 text-start flex-wrap bg-dark text-white"
-    >
-      <ul class="nav flex-column">
-        <li class="fw-bold nav-item">
-          Estudio Contable Impositivo Laboral Bruschetti
-        </li>
-        <li class="nav-item">Leandro Mariano Bruschetti</li>
-        <li class="nav-item">CUIT 20-27741801-1</li>
-        <li class="nav-item">CONTADOR PUBLICO Tº162 Fº132</li>
-        <li class="nav-item">LICENCIADO EN ADMINISTRACION Tº9 Fº124</li>
-        <li class="nav-item">LEGAJO 42142/1 C.P.C.E.P.B.A.</li>
-      </ul>
-      <ul class="nav flex-column">
-        <li class="fw-bold nav-item">Dirrección</li>
-        <li class="nav-item">España 4027 - Mar del Plata</li>
-      </ul>
-      <ul class="nav flex-column">
-        <li class="fw-bold nav-item">Horario</li>
-        <li class="nav-item">8:30hs. a 13:30hs.</li>
-      </ul>
-      <ul class="nav flex-column">
-        <li class="fw-bold nav-item">Contacto</li>
-        <li class="nav-item">
-          <a href="mailto:leandro.bruschetti@gmail.com?Subject=consulta"
-            >leandro.bruschetti@gmail.com</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="tel:+542233524723">tel. fijo: 3524723</a>
-        </li>
-      </ul>
+    <footer class="site-footer text-white mt-5">
+      <div class="container">
+        <div class="row g-4 site-footer__main">
+          <section class="col-lg-5" aria-labelledby="footer-study-title">
+            <h2 class="site-footer__title" id="footer-study-title">
+              Estudio Contable Impositivo Laboral Bruschetti
+            </h2>
+            <p class="site-footer__name">Leandro Mariano Bruschetti</p>
+            <ul class="site-footer__credentials list-unstyled">
+              <li>Contador Público · T.º 162 F.º 132</li>
+              <li>Licenciado en Administración · T.º 9 F.º 124</li>
+              <li>Legajo 42142/1 · C.P.C.E.P.B.A.</li>
+              <li>CUIT 20-27741801-1</li>
+            </ul>
+          </section>
+          <nav class="col-12 col-md-6 col-lg-3" aria-label="Navegación del pie de página">
+            <h2 class="site-footer__heading">Explorá el sitio</h2>
+            <ul class="site-footer__links list-unstyled">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="sobre-estudio.html">Sobre el estudio</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+              <li><a href="links-utiles.html">Links útiles</a></li>
+            </ul>
+          </nav>
+          <section class="col-12 col-md-6 col-lg-4" aria-labelledby="footer-contact-title">
+            <h2 class="site-footer__heading" id="footer-contact-title">
+              Contacto
+            </h2>
+            <ul class="site-footer__contact list-unstyled">
+              <li>
+                <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                <span><span class="site-footer__label">Dirección</span>España 4027, Mar del Plata</span>
+              </li>
+              <li>
+                <i class="bi bi-clock" aria-hidden="true"></i>
+                <span><span class="site-footer__label">Horario</span>8:30 a 13:30 h</span>
+              </li>
+              <li>
+                <i class="bi bi-envelope" aria-hidden="true"></i>
+                <a href="mailto:leandro.bruschetti@gmail.com?Subject=consulta">leandro.bruschetti@gmail.com</a>
+              </li>
+              <li>
+                <i class="bi bi-telephone" aria-hidden="true"></i>
+                <a href="tel:+542233524723">Teléfono: 3524723</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="site-footer__bottom">
+          <p>Estudio Contable Bruschetti <span aria-hidden="true">·</span> Mar del Plata</p>
+        </div>
+      </div>
     </footer>
-    <a href="https://wa.link/ryhjqr">
+    <a class="whatsapp-float" href="https://wa.link/ryhjqr" aria-label="Contactar por WhatsApp">
       <img
         src="imgs/whatsapp.svg"
-        alt="Estudio Contable Impositivo Laboral - Whatsapp"
-        style="position: fixed; bottom: 50px; right: 20px"
+        alt=""
     /></a>
 
     <script src="js/bootstrap.js"></script>

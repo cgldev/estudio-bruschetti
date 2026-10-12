@@ -6,12 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Encuentre respuesta a las preguntas más frecuentes"
+      content="Resolvé dudas sobre impuestos, sueldos, sociedades y servicios contables con las respuestas del Estudio Bruschetti en Mar del Plata."
+    />
+    <link
+      rel="canonical"
+      href="https://estudiocontablebruschetti.com.ar/preguntas-frecuentes.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:site_name" content="Estudio Contable Bruschetti" />
+    <meta
+      property="og:title"
+      content="Preguntas frecuentes contables | Estudio Bruschetti"
     />
     <meta
-      name="keywords"
-      content="estudio, contable, impositivo, laboral, bruschetti, mar del plata, liquidacion, impuestos, sueldos, sociedades"
+      property="og:description"
+      content="Resolvé dudas sobre impuestos, sueldos, sociedades y servicios contables con las respuestas del Estudio Bruschetti en Mar del Plata."
     />
+    <meta
+      property="og:url"
+      content="https://estudiocontablebruschetti.com.ar/preguntas-frecuentes.html"
+    />
+    <meta
+      property="og:image"
+      content="https://estudiocontablebruschetti.com.ar/imgs/estudio-contable-bruschetti-banner.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Estudio Contable Bruschetti en Mar del Plata"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
     <link
       rel="shortcut icon"
       href="imgs/estudio-contable-bruschetti-icono.png"
@@ -19,7 +43,7 @@
     />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/bootstrap-icons.css" />
-    <title>Estudio Contable Impositivo Laboral | Preguntas Frecuentes</title>
+    <title>Preguntas frecuentes contables | Estudio Bruschetti</title>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -37,7 +61,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark site-navbar fixed-top">
         <div class="container">
           <a class="navbar-brand" href="/"
             ><img
@@ -50,9 +74,9 @@
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#estudio-contable"
-            aria-controls="navbarSupportedContent"
+            aria-controls="estudio-contable"
             aria-expanded="false"
-            aria-label="Estudio Contable navegación"
+            aria-label="Abrir o cerrar menú de navegación"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -70,7 +94,10 @@
                 <a class="nav-link" href="servicios.html">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="preguntas-frecuentes.html"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="preguntas-frecuentes.html"
                   >Preguntas Frecuentes</a
                 >
               </li>
@@ -78,7 +105,7 @@
                 <a class="nav-link" href="links-utiles.html">Links útiles</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="contacto.html"
+                <a class="nav-link contact-link" href="contacto.html"
                   >Contacto</a
                 >
               </li>
@@ -88,13 +115,48 @@
       </nav>
     </header>
     <main>
-      <div class="container">
-        <div class="text-center my-5">
-          <h1>Estudio Contable Laboral Impositivo | Preguntas Frecuentes</h1>
-          <hr />
-        </div>
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
+      <div class="faq-page">
+        <div class="container">
+          <header class="faq-heading text-center">
+            <p class="faq-heading__eyebrow">Resolvemos tus dudas</p>
+            <h1>Preguntas frecuentes</h1>
+            <p>
+              Encontrá respuestas sobre servicios contables, impuestos y
+              sociedades.
+            </p>
+          </header>
+          <div class="faq-search">
+            <label class="form-label" for="faq-search-input"
+              >Buscar en las preguntas</label
+            >
+            <div class="faq-search__field">
+              <i class="bi bi-search" aria-hidden="true"></i>
+              <input
+                class="form-control"
+                id="faq-search-input"
+                type="search"
+                placeholder="Ej.: monotributo, sociedades..."
+                autocomplete="off"
+                aria-describedby="faq-search-status"
+              />
+            </div>
+            <p
+              class="faq-search__status"
+              id="faq-search-status"
+              aria-live="polite"
+            ></p>
+          </div>
+          <nav class="faq-nav" aria-label="Categorías de preguntas frecuentes">
+            <a href="#faq-general">El estudio</a>
+            <a href="#faq-impuestos">Impuestos y monotributo</a>
+            <a href="#faq-sociedades">Sociedades</a>
+          </nav>
+          <div class="accordion faq-accordion" id="accordionExample">
+            <div class="faq-category-title" id="faq-general">
+              <h2>El estudio</h2>
+              <p>Cómo podemos acompañar a tu empresa y a tu actividad.</p>
+            </div>
+            <div class="accordion-item">
             <h2 class="accordion-header" id="headingZero">
               <button
                 class="accordion-button"
@@ -129,7 +191,7 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+            <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button
                 class="accordion-button collapsed"
@@ -181,7 +243,11 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+            <div class="faq-category-title" id="faq-impuestos">
+              <h2>Impuestos y monotributo</h2>
+              <p>Información general para entender tus obligaciones.</p>
+            </div>
+            <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
               <button
                 class="accordion-button collapsed"
@@ -213,7 +279,7 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+            <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
               <button
                 class="accordion-button collapsed"
@@ -242,7 +308,7 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+            <div class="accordion-item">
             <h2 class="accordion-header" id="headingFour">
               <button
                 class="accordion-button collapsed"
@@ -272,7 +338,7 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+            <div class="accordion-item">
             <h2 class="accordion-header" id="headingFive">
               <button
                 class="accordion-button collapsed"
@@ -311,7 +377,11 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item">
+            <div class="faq-category-title" id="faq-sociedades">
+              <h2>Sociedades</h2>
+              <p>Orientación inicial para elegir una estructura empresarial.</p>
+            </div>
+            <div class="accordion-item">
             <h2 class="accordion-header" id="headingSix">
               <button
                 class="accordion-button collapsed"
@@ -358,61 +428,129 @@
               </div>
             </div>
           </div>
+          </div>
+          <section class="faq-contact-cta">
+            <div>
+              <h2>¿Te quedó alguna duda?</h2>
+              <p>Escribinos y conversamos sobre tu caso.</p>
+            </div>
+            <a href="contacto.html" class="btn">Hacer una consulta</a>
+          </section>
         </div>
       </div>
     </main>
     <!-- Seccion boton contacto -->
-    <section class="bg-primary text-light p-5 my-5">
+    <footer class="site-footer text-white">
       <div class="container">
-        <div class="d-md-flex justify-content-between align-items-center">
-          <h3 class="mb-3 mb-md-0 display-4">¿Dudas o Consultas?</h3>
-
-          <a href="contacto.html" class="btn btn-dark btn-lg" type="button"
-            >Contáctenos</a
-          >
+        <div class="row g-4 site-footer__main">
+          <section class="col-lg-5" aria-labelledby="footer-study-title">
+            <h2 class="site-footer__title" id="footer-study-title">
+              Estudio Contable Impositivo Laboral Bruschetti
+            </h2>
+            <p class="site-footer__name">Leandro Mariano Bruschetti</p>
+            <ul class="site-footer__credentials list-unstyled">
+              <li>Contador Público · T.º 162 F.º 132</li>
+              <li>Licenciado en Administración · T.º 9 F.º 124</li>
+              <li>Legajo 42142/1 · C.P.C.E.P.B.A.</li>
+              <li>CUIT 20-27741801-1</li>
+            </ul>
+          </section>
+          <nav class="col-12 col-md-6 col-lg-3" aria-label="Navegación del pie de página">
+            <h2 class="site-footer__heading">Explorá el sitio</h2>
+            <ul class="site-footer__links list-unstyled">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="sobre-estudio.html">Sobre el estudio</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+              <li><a href="links-utiles.html">Links útiles</a></li>
+            </ul>
+          </nav>
+          <section class="col-12 col-md-6 col-lg-4" aria-labelledby="footer-contact-title">
+            <h2 class="site-footer__heading" id="footer-contact-title">
+              Contacto
+            </h2>
+            <ul class="site-footer__contact list-unstyled">
+              <li>
+                <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                <span><span class="site-footer__label">Dirección</span>España 4027, Mar del Plata</span>
+              </li>
+              <li>
+                <i class="bi bi-clock" aria-hidden="true"></i>
+                <span><span class="site-footer__label">Horario</span>8:30 a 13:30 h</span>
+              </li>
+              <li>
+                <i class="bi bi-envelope" aria-hidden="true"></i>
+                <a href="mailto:leandro.bruschetti@gmail.com?Subject=consulta">leandro.bruschetti@gmail.com</a>
+              </li>
+              <li>
+                <i class="bi bi-telephone" aria-hidden="true"></i>
+                <a href="tel:+542233524723">Teléfono: 3524723</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="site-footer__bottom">
+          <p>Estudio Contable Bruschetti <span aria-hidden="true">·</span> Mar del Plata</p>
         </div>
       </div>
-    </section>
-    <footer
-      class="d-flex justify-content-between p-5 text-start flex-wrap bg-dark text-white"
-    >
-      <ul class="nav flex-column">
-        <li class="fw-bold nav-item">
-          Estudio Contable Impositivo Laboral Bruschetti
-        </li>
-        <li class="nav-item">Leandro Mariano Bruschetti</li>
-        <li class="nav-item">CUIT 20-27741801-1</li>
-        <li class="nav-item">CONTADOR PUBLICO Tº162 Fº132</li>
-        <li class="nav-item">LICENCIADO EN ADMINISTRACION Tº9 Fº124</li>
-        <li class="nav-item">LEGAJO 42142/1 C.P.C.E.P.B.A.</li>
-      </ul>
-      <ul class="nav flex-column">
-        <li class="fw-bold nav-item">Dirrección</li>
-        <li class="nav-item">España 4027 - Mar del Plata</li>
-      </ul>
-      <ul class="nav flex-column">
-        <li class="fw-bold nav-item">Horario</li>
-        <li class="nav-item">8:30hs. a 13:30hs.</li>
-      </ul>
-      <ul class="nav flex-column">
-        <li class="fw-bold nav-item">Contacto</li>
-        <li class="nav-item">
-          <a href="mailto:leandro.bruschetti@gmail.com?Subject=consulta"
-            >leandro.bruschetti@gmail.com</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="tel:+542233524723">tel. fijo: 3524723</a>
-        </li>
-      </ul>
     </footer>
-    <a href="https://wa.link/ryhjqr">
+    <a class="whatsapp-float" href="https://wa.link/ryhjqr" aria-label="Contactar por WhatsApp">
       <img
         src="imgs/whatsapp.svg"
-        alt="Estudio Contable Impositivo Laboral - Whatsapp"
-        style="position: fixed; bottom: 50px; right: 20px"
+        alt=""
     /></a>
 
+    <script>
+      const faqSearch = document.querySelector("#faq-search-input");
+      const faqAccordion = document.querySelector("#accordionExample");
+      const faqStatus = document.querySelector("#faq-search-status");
+      const faqGroups = [];
+      let currentGroup = null;
+
+      faqAccordion.querySelectorAll(":scope > *").forEach((element) => {
+        if (element.classList.contains("faq-category-title")) {
+          currentGroup = { heading: element, items: [] };
+          faqGroups.push(currentGroup);
+        } else if (
+          element.classList.contains("accordion-item") &&
+          currentGroup
+        ) {
+          currentGroup.items.push(element);
+        }
+      });
+
+      const normalizeFaqText = (text) =>
+        text
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .toLocaleLowerCase("es");
+
+      faqSearch.addEventListener("input", () => {
+        const query = normalizeFaqText(faqSearch.value.trim());
+        let visibleCount = 0;
+
+        faqGroups.forEach(({ heading, items }) => {
+          let groupVisibleCount = 0;
+
+          items.forEach((item) => {
+            const matches = normalizeFaqText(item.textContent).includes(query);
+            item.classList.toggle("is-filtered-out", !matches);
+            groupVisibleCount += Number(matches);
+          });
+
+          heading.classList.toggle("is-filtered-out", groupVisibleCount === 0);
+          visibleCount += groupVisibleCount;
+        });
+
+        faqStatus.textContent = query
+          ? visibleCount === 0
+            ? "No encontramos preguntas que coincidan. Probá con otras palabras."
+            : `${visibleCount} ${
+                visibleCount === 1 ? "pregunta coincide" : "preguntas coinciden"
+              } con tu búsqueda.`
+          : "";
+      });
+    </script>
     <script src="js/bootstrap.js"></script>
   </body>
 </html>
