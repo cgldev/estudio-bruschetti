@@ -1,11 +1,24 @@
 $font-family-base: "Lato", sans-serif;
 
-$celeste-claro: #68a7dd;
-$celeste-oscruro: #009cdf;
-$negro: #0d0d0d;
+$color-brand-navy: #12394d;
+$color-brand-blue: #12658a;
+$color-brand-cyan: #009cdf;
+$color-brand-sky: #68a7dd;
+$color-brand-pale: #b5d9e8;
+$color-brand-soft: #d5edf6;
+$color-surface: #f5f8fa;
+$color-surface-accent: #eaf6fb;
+$color-border: #e1eaf0;
+$color-field-border: #d6e0e6;
+$color-text: #263f50;
+$color-text-muted: #536574;
+$color-text-subtle: #647684;
 
-$dark: $negro;
-$primary: $celeste-claro;
-$secondary: $celeste-oscruro;
+$dark: $color-brand-navy;
+$primary: $color-brand-blue;
+$secondary: $color-brand-cyan;
+$body-color: $color-text;
+$link-color: $color-brand-blue;
+$link-hover-color: $color-brand-navy;
 $navbar-dark-toggler-border-color: #fff;
 $mark-bg: rgba(255, 255, 255, 0.571);

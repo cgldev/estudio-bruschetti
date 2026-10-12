@@ -6,12 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Consulte sobre liquidación de impuestos, sueldos, constitución de sociedades y preparación de estados contables en Mar del Plata."
+      content="Contactá al Estudio Contable Bruschetti en Mar del Plata para consultas sobre impuestos, sueldos, sociedades y asesoramiento contable."
+    />
+    <link
+      rel="canonical"
+      href="https://estudiocontablebruschetti.com.ar/contacto.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:site_name" content="Estudio Contable Bruschetti" />
+    <meta
+      property="og:title"
+      content="Contacto | Estudio Contable Bruschetti en Mar del Plata"
     />
     <meta
-      name="keywords"
-      content="estudio, contable, impositivo, laboral, bruschetti, mar del plata, liquidacion, impuestos, sueldos, sociedades"
+      property="og:description"
+      content="Contactá al Estudio Contable Bruschetti en Mar del Plata para consultas sobre impuestos, sueldos, sociedades y asesoramiento contable."
     />
+    <meta
+      property="og:url"
+      content="https://estudiocontablebruschetti.com.ar/contacto.html"
+    />
+    <meta
+      property="og:image"
+      content="https://estudiocontablebruschetti.com.ar/imgs/estudio-contable-bruschetti-banner.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Estudio Contable Bruschetti en Mar del Plata"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
     <link
       rel="shortcut icon"
       href="imgs/estudio-contable-bruschetti-icono.png"
@@ -19,7 +43,7 @@
     />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/bootstrap-icons.css" />
-    <title>Estudio Contable Impositivo Laboral | Contacto</title>
+    <title>Contacto | Estudio Contable Bruschetti en Mar del Plata</title>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -37,7 +61,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark site-navbar fixed-top">
         <div class="container">
           <a class="navbar-brand" href="/"
             ><img
@@ -50,9 +74,9 @@
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#estudio-contable"
-            aria-controls="navbarSupportedContent"
+            aria-controls="estudio-contable"
             aria-expanded="false"
-            aria-label="Estudio Contable navegación"
+            aria-label="Abrir o cerrar menú de navegación"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -78,7 +102,10 @@
                 <a class="nav-link" href="links-utiles.html">Links útiles</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link contact-link active"
+                  aria-current="page"
+                  href="contacto.html"
                   >Contacto</a
                 >
               </li>
@@ -88,114 +115,231 @@
       </nav>
     </header>
     <main>
-      <div class="container">
-        <div class="text-center my-5">
-          <h1>Estudio Contable Laboral Impositivo | Contacto</h1>
-          <hr />
+      <section class="contact-page">
+        <div class="container">
+          <header class="contact-heading text-center">
+            <p class="contact-heading__eyebrow">Estamos para acompañarte</p>
+            <h1>Hablemos de tu actividad</h1>
+            <p>
+              Contanos qué necesitás y nos pondremos en contacto para asesorarte.
+            </p>
+          </header>
+          <div class="row g-4 g-xl-5 align-items-stretch">
+            <div class="col-lg-7">
+              <section class="contact-form-card h-100">
+                <h2>Enviá tu consulta</h2>
+                <p class="contact-form-card__intro">
+                  Los campos marcados con * son obligatorios. Completá el
+                  formulario y te responderemos a la brevedad.
+                </p>
+                <form
+                  action="enviado.html"
+                  name="contacto"
+                  method="POST"
+                  data-netlify="true"
+                >
+                  <div class="mb-3">
+                    <label class="form-label" for="nombre"
+                      >Nombre <span aria-hidden="true">*</span
+                      ><span class="visually-hidden"> (obligatorio)</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nombre"
+                      name="nombre"
+                      autocomplete="name"
+                      placeholder="Tu nombre"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="email"
+                      >Correo electrónico <span aria-hidden="true">*</span
+                      ><span class="visually-hidden"> (obligatorio)</span></label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      autocomplete="email"
+                      placeholder="nombre@empresa.com"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="motivo"
+                      >Motivo de consulta <span class="text-muted">(opcional)</span></label
+                    >
+                    <select class="form-select" id="motivo" name="motivo">
+                      <option value="" selected>Seleccioná un tema</option>
+                      <option value="Impuestos">Impuestos</option>
+                      <option value="Sueldos">Sueldos</option>
+                      <option value="Sociedades">Sociedades</option>
+                      <option value="Auditoría">Auditoría</option>
+                      <option value="Otro">Otro</option>
+                    </select>
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label" for="mensaje"
+                      >Mensaje <span aria-hidden="true">*</span
+                      ><span class="visually-hidden"> (obligatorio)</span></label
+                    >
+                    <textarea
+                      class="form-control"
+                      name="mensaje"
+                      id="mensaje"
+                      placeholder="¿En qué podemos ayudarte?"
+                      rows="5"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn contact-submit">
+                    Enviar consulta <i class="bi bi-arrow-right"></i>
+                  </button>
+                </form>
+              </section>
+            </div>
+            <div class="col-lg-5">
+              <aside class="contact-info h-100">
+                <p class="contact-info__eyebrow">Contacto directo</p>
+                <h2>Hablemos cuando te quede cómodo</h2>
+                <p class="contact-info__intro">
+                  Elegí el canal que prefieras. Estamos en Mar del Plata para
+                  acompañar a tu negocio.
+                </p>
+                <div class="contact-info__items">
+                  <a
+                    class="contact-info__item"
+                    href="mailto:leandro.bruschetti@gmail.com?Subject=consulta"
+                  >
+                    <span class="contact-info__icon"
+                      ><i class="bi bi-envelope"></i
+                    ></span>
+                    <span>
+                      <span class="contact-info__label">Correo electrónico</span>
+                      <span class="contact-info__value"
+                        >leandro.bruschetti@gmail.com</span
+                      >
+                    </span>
+                  </a>
+                  <a class="contact-info__item" href="tel:+542233524723">
+                    <span class="contact-info__icon"
+                      ><i class="bi bi-telephone"></i
+                    ></span>
+                    <span>
+                      <span class="contact-info__label">Teléfono</span>
+                      <span class="contact-info__value">223 352-4723</span>
+                    </span>
+                  </a>
+                  <a class="contact-info__item" href="https://wa.link/ryhjqr">
+                    <span class="contact-info__icon"
+                      ><i class="bi bi-whatsapp"></i
+                    ></span>
+                    <span>
+                      <span class="contact-info__label">WhatsApp</span>
+                      <span class="contact-info__value">Escribinos por WhatsApp</span>
+                    </span>
+                  </a>
+                </div>
+                <div class="contact-info__location">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>
+                    <strong>España 4027</strong>
+                    <span>Mar del Plata · Atención de 8:30 a 13:30</span>
+                  </span>
+                </div>
+              </aside>
+            </div>
+          </div>
         </div>
-        <form
-          action="/estudio-contable/enviado.html"
-          class="mb-5"
-          name="contacto"
-          method="POST"
-          data-netlify="true"
-        >
-          <div class="input-group mb-3">
-            <span class="input-group-text"
-              ><i class="bi bi-person-fill"></i
-            ></span>
-            <div class="form-floating">
-              <input
-                type="text"
-                class="form-control"
-                id="nombre"
-                name="nombre"
-                placeholder="Nombre"
-              />
-              <label for="nombre">Nombre</label>
-            </div>
-          </div>
-          <div class="input-group mb-3">
-            <span class="input-group-text"
-              ><i class="bi bi-envelope-fill"></i
-            ></span>
-            <div class="form-floating">
-              <input
-                type="text"
-                class="form-control"
-                id="email"
-                name="email"
-                placeholder="Email"
-              />
-              <label for="email">Email</label>
-            </div>
-          </div>
-          <div class="input-group mb-3">
-            <span class="input-group-text"
-              ><i class="bi bi-chat-left-fill"></i
-            ></span>
-            <textarea
-              class="form-control"
-              name="mensaje"
-              id="mensaje"
-              name="mensaje"
-              placeholder="Deje su mensaje aqui"
-              style="height: 100px"
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-outline-dark">Enviar</button>
-        </form>
-      </div>
+      </section>
     </main>
-    <section>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12573.793468745067!2d-57.5711516!3d-38.0133255!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7ea6f0ea31950391!2sEstudio%20Bruschetti%20%26%20Asociados!5e0!3m2!1ses!2sar!4v1671739298862!5m2!1ses!2sar"
-        width="100%"
-        height="300"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+    <section class="contact-map-section">
+      <div class="container">
+        <div class="contact-map-heading">
+          <div>
+            <p class="contact-heading__eyebrow">Cómo llegar</p>
+            <h2>Visitanos en Mar del Plata</h2>
+          </div>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Espa%C3%B1a+4027%2C+Mar+del+Plata"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-map-link"
+            >Abrir en Google Maps <i class="bi bi-box-arrow-up-right"></i
+          ></a>
+        </div>
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12573.793468745067!2d-57.5711516!3d-38.0133255!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7ea6f0ea31950391!2sEstudio%20Bruschetti%20%26%20Asociados!5e0!3m2!1ses!2sar!4v1671739298862!5m2!1ses!2sar"
+            title="Ubicación del Estudio Contable Bruschetti en Mar del Plata"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
     </section>
-    <footer
-      class="d-flex justify-content-between p-5 text-start flex-wrap bg-dark text-white mt-5"
-    >
-      <ul class="nav flex-column">
-        <li class="fw-bold nav-item">
-          Estudio Contable Impositivo Laboral Bruschetti
-        </li>
-        <li class="nav-item">Leandro Mariano Bruschetti</li>
-        <li class="nav-item">CUIT 20-27741801-1</li>
-        <li class="nav-item">CONTADOR PUBLICO Tº162 Fº132</li>
-        <li class="nav-item">LICENCIADO EN ADMINISTRACION Tº9 Fº124</li>
-        <li class="nav-item">LEGAJO 42142/1 C.P.C.E.P.B.A.</li>
-      </ul>
-      <ul class="nav flex-column">
-        <li class="fw-bold nav-item">Dirrección</li>
-        <li class="nav-item">España 4027 - Mar del Plata</li>
-      </ul>
-      <ul class="nav flex-column">
-        <li class="fw-bold nav-item">Horario</li>
-        <li class="nav-item">8:30hs. a 13:30hs.</li>
-      </ul>
-      <ul class="nav flex-column">
-        <li class="fw-bold nav-item">Contacto</li>
-        <li class="nav-item">
-          <a href="mailto:leandro.bruschetti@gmail.com?Subject=consulta"
-            >leandro.bruschetti@gmail.com</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="tel:+542233524723">tel. fijo: 3524723</a>
-        </li>
-      </ul>
+    <footer class="site-footer text-white mt-5">
+      <div class="container">
+        <div class="row g-4 site-footer__main">
+          <section class="col-lg-5" aria-labelledby="footer-study-title">
+            <h2 class="site-footer__title" id="footer-study-title">
+              Estudio Contable Impositivo Laboral Bruschetti
+            </h2>
+            <p class="site-footer__name">Leandro Mariano Bruschetti</p>
+            <ul class="site-footer__credentials list-unstyled">
+              <li>Contador Público · T.º 162 F.º 132</li>
+              <li>Licenciado en Administración · T.º 9 F.º 124</li>
+              <li>Legajo 42142/1 · C.P.C.E.P.B.A.</li>
+              <li>CUIT 20-27741801-1</li>
+            </ul>
+          </section>
+          <nav class="col-12 col-md-6 col-lg-3" aria-label="Navegación del pie de página">
+            <h2 class="site-footer__heading">Explorá el sitio</h2>
+            <ul class="site-footer__links list-unstyled">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="sobre-estudio.html">Sobre el estudio</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+              <li><a href="links-utiles.html">Links útiles</a></li>
+            </ul>
+          </nav>
+          <section class="col-12 col-md-6 col-lg-4" aria-labelledby="footer-contact-title">
+            <h2 class="site-footer__heading" id="footer-contact-title">
+              Contacto
+            </h2>
+            <ul class="site-footer__contact list-unstyled">
+              <li>
+                <i class="bi bi-geo-alt" aria-hidden="true"></i>
+                <span><span class="site-footer__label">Dirección</span>España 4027, Mar del Plata</span>
+              </li>
+              <li>
+                <i class="bi bi-clock" aria-hidden="true"></i>
+                <span><span class="site-footer__label">Horario</span>8:30 a 13:30 h</span>
+              </li>
+              <li>
+                <i class="bi bi-envelope" aria-hidden="true"></i>
+                <a href="mailto:leandro.bruschetti@gmail.com?Subject=consulta">leandro.bruschetti@gmail.com</a>
+              </li>
+              <li>
+                <i class="bi bi-telephone" aria-hidden="true"></i>
+                <a href="tel:+542233524723">Teléfono: 3524723</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="site-footer__bottom">
+          <p>Estudio Contable Bruschetti <span aria-hidden="true">·</span> Mar del Plata</p>
+        </div>
+      </div>
     </footer>
-    <a href="https://wa.link/ryhjqr">
+    <a class="whatsapp-float" href="https://wa.link/ryhjqr" aria-label="Contactar por WhatsApp">
       <img
         src="imgs/whatsapp.svg"
-        alt="Estudio Contable Impositivo Laboral - Whatsapp"
-        style="position: fixed; bottom: 50px; right: 20px"
+        alt=""
     /></a>
 
     <script src="js/bootstrap.js"></script>
